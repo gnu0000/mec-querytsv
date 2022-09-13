@@ -5,6 +5,11 @@
  *
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable : 4996)
+#pragma warning(disable : 4267)
+#pragma warning(disable : 4244)
+
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
@@ -676,6 +681,7 @@ USHORT ReadLabelsFile (PSZ pszFile)
    PSZ   p, p2;
    char  szBaseName [128];
 
+   p = pszInFile;
    p = (p = strrchr (pszInFile, '\\') ? p : pszInFile);
    strcpy (szBaseName, p);
    if (p = strchr (szBaseName, '.'))
