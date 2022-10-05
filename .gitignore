@@ -1,3 +1,7 @@
+Debug/
+Release/
+x64/
+.vs/
 node_modules/
 build/
 dist/
